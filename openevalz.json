@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "chembench",
+    "slug": "chembench",
+    "title": "ChemBench: Are large language models superhuman chemists?",
+    "group": "Knowledge",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/chembench",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-B",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "chembench",
+      "samples": 2786
+    }
+  ],
+  "total_samples": 2786,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "jablonkagroup/ChemBench",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
